@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
-import asyncio
 
 load_dotenv()
 
@@ -16,7 +15,8 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 initial_extensions = [
     'cogs.gemini_cog',
     'cogs.moderator_cog',
-    'cogs.basic_cog'
+    'cogs.basic_cog',
+    'cogs.fun_cog'
 ]
 
 @bot.event
