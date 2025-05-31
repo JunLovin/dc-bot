@@ -13,10 +13,10 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='$', intents=intents)
 
 initial_extensions = [
+    'cogs.basic_cog',
+    'cogs.fun_cog',
     'cogs.gemini_cog',
     'cogs.moderator_cog',
-    'cogs.basic_cog',
-    'cogs.fun_cog'
 ]
 
 @bot.event
