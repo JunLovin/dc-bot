@@ -39,16 +39,28 @@ Un bot de Discord desarrollado en Python, diseñado para ser modular, fácil de 
    python main.py
    ```
 
-## 🛠️ Uso
+## 🧩 Comandos disponibles
 
-- En tu servidor de Discord, escribe:
-    ```plaintext
-    $gemini "<tu_pregunta>"
-    ```
+- `$gemini <pregunta>`  
+  Obtén una respuesta generada por la IA de Google Gemini.
 
-El bot responderá con una respuesta generada por la IA de Google Gemini.
+- `$kick @usuario [razón]`  
+  Expulsa a un usuario del servidor (requiere permisos de moderador).
 
-**NOTA:** Es importante que la pregunta esté entre comillas dobles para que se interprete correctamente.
+- `$clean_chat`  
+  Borra mensajes del canal actual (por defecto 100).
+
+- `$ayuda`  
+  Muestra los comandos básicos del bot.
+
+- `$creditos`  
+  Muestra los créditos del bot.
+
+- `$random_gif`  
+  Envía un gif aleatorio divertido al canal.
+
+**¡Desarrollando más comandos!**  
+Este bot está en constante evolución. Pronto se agregarán más comandos y funcionalidades.
 
 ## 📚 Estructura del proyecto
 
