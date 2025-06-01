@@ -1,4 +1,3 @@
-import os
 from discord.ext import commands
 from utils import getResponse
 
@@ -9,8 +8,7 @@ class GeminiCog(commands.Cog):
     @commands.command(name="gemini")
     async def gemini(self, ctx, *args):
         if not args:
-            await ctx.send("Por favor, ingresa un prompt para Gemini. Porejemplo: `$gemini ¿Qué es la programación?`")
-            return
+            await ctx.send("Por favor, ingresa un prompt para Gemini. Por ejemplo: `$gemini ¿Qué es la programación?`")
             
         user_prompt = " ".join(args)
 
