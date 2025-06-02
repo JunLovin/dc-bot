@@ -9,6 +9,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 intents = discord.Intents.all()
 intents.message_content = True
+intents.members = True
 
 bot = commands.Bot(command_prefix='$', intents=intents)
 
@@ -17,6 +18,7 @@ initial_extensions = [
     'cogs.fun_cog',
     'cogs.gemini_cog',
     'cogs.moderator_cog',
+    'cogs.welcome_cog'
 ]
 
 @bot.event
